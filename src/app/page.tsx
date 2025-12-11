@@ -28,7 +28,7 @@ export default function Home() {
               Empowering Your Financial Future.
             </h1>
             <div className="mt-8">
-              <Link href="/capitalG.apk" download>
+              <Link href="https://drive.google.com/uc?export=download&id=1OW1SX3wMdZ2wH8hOWXSyvkn4DwUDeT3J" download>
                 <Button size="lg">
                   Download
                   <Download className="ml-2 h-5 w-5" />
