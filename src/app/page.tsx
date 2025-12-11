@@ -25,10 +25,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative container mx-auto px-4 text-white">
             <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl drop-shadow-md">
-              At CapitalG, we grow people's money.
+              Empowering Your Financial Future.
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl drop-shadow">
-              Expert financial consulting and investment management to help you achieve your goals.
+              Strategic financial consulting and bespoke investment management designed to realize your ambitions.
             </p>
             <div className="mt-8">
               <Button size="lg">
