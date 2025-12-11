@@ -27,9 +27,6 @@ export default function Home() {
             <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl drop-shadow-md">
               Empowering Your Financial Future.
             </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl drop-shadow">
-              Strategic financial consulting and bespoke investment management designed to realize your ambitions.
-            </p>
             <div className="mt-8">
               <Button size="lg">
                 Download Report
