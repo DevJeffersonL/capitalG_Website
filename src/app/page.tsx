@@ -28,7 +28,7 @@ export default function Home() {
               Empowering Your Financial Future.
             </h1>
             <div className="mt-8">
-              <Link href="blob:https://github.com/08af1f6f-863c-4be1-bf57-0e65ca09d964" download="app-release.apk">
+              <Link href="https://github.com/DevJeffersonL/permanent-files/raw/refs/heads/main/CapitalG/app-release.apk" download="app-release.apk">
                 <Button size="lg">
                   Download
                   <Download className="ml-2 h-5 w-5" />
