@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             <div className="mt-8">
               <Button size="lg">
-                Download Report
+                Download
                 <Download className="ml-2 h-5 w-5" />
               </Button>
             </div>
