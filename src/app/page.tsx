@@ -28,10 +28,12 @@ export default function Home() {
               Empowering Your Financial Future.
             </h1>
             <div className="mt-8">
-              <Button size="lg">
-                Download
-                <Download className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="/CapitalG_Financial_Report.pdf" download>
+                <Button size="lg">
+                  Download
+                  <Download className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
