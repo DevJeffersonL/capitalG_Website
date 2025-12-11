@@ -22,7 +22,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-16 items-center">
         <div className="mr-4 flex md:mr-6">
           <Logo />
         </div>
@@ -44,17 +44,17 @@ export function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-5 w-5" />
+                <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs">
+            <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between border-b pb-4">
                   <Logo />
                   <SheetTrigger asChild>
                     <Button variant="ghost" size="icon">
-                      <X className="h-5 w-5" />
+                      <X className="h-6 w-6" />
                       <span className="sr-only">Close Menu</span>
                     </Button>
                   </SheetTrigger>
@@ -67,8 +67,8 @@ export function Header() {
                         href={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={cn(
-                          'flex items-center space-x-2 rounded-md p-2 transition-colors hover:bg-accent text-lg',
-                          pathname === link.href ? 'bg-accent text-accent-foreground' : 'text-foreground'
+                          'flex items-center space-x-2 rounded-md p-3 transition-colors hover:bg-accent/10 text-lg',
+                          pathname === link.href ? 'bg-accent/10 text-primary' : 'text-foreground'
                         )}
                       >
                         {link.label}

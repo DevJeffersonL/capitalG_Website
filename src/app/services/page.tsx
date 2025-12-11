@@ -57,19 +57,19 @@ export default function ServicesPage() {
               data-ai-hint={bannerImage.imageHint}
             />
         )}
-        <div className="absolute inset-0 bg-primary/70" />
+        <div className="absolute inset-0 bg-primary/30" />
         <div className="relative container mx-auto h-full flex flex-col items-center justify-center text-center text-primary-foreground">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Our Services</h1>
-          <p className="mt-4 max-w-2xl text-lg text-primary-foreground/80">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl drop-shadow-lg">Our Services</h1>
+          <p className="mt-4 max-w-2xl text-lg text-primary-foreground/80 drop-shadow-md">
             Comprehensive solutions designed for your financial success.
           </p>
         </div>
       </header>
       
       <main className="container mx-auto py-16 md:py-24">
-        <div className="grid gap-12 md:grid-cols-1 lg:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
           {servicesList.map((service) => (
-            <Card key={service.title} className="flex flex-col transition-shadow hover:shadow-lg">
+            <Card key={service.title} className="flex flex-col transition-all duration-300 hover:shadow-2xl hover:border-primary/50 bg-card">
               <CardHeader className="flex flex-row items-start gap-4">
                 <div className="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                   {service.icon}
@@ -83,7 +83,7 @@ export default function ServicesPage() {
                 <ul className="space-y-2 text-sm">
                   {service.features.map(feature => (
                     <li key={feature} className="flex items-start">
-                      <CheckCircle className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0 text-green-600" />
+                      <CheckCircle className="h-4 w-4 mt-0.5 mr-2 flex-shrink-0 text-green-500" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}

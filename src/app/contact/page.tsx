@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 export default function ContactPage() {
   return (
     <>
-      <header className="py-16 md:py-24 bg-muted">
+      <header className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">Contact Us</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -18,7 +18,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-primary">Get in Touch Directly</h2>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>

@@ -15,7 +15,7 @@ export default function AboutPage() {
 
   return (
     <div className="bg-background text-foreground">
-      <header className="py-16 md:py-24 bg-muted">
+      <header className="py-16 md:py-24 bg-muted/50">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">About CapitalG</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -62,7 +62,7 @@ export default function AboutPage() {
               advice. From our humble beginnings in a small office, we have grown into a leading financial services
               firm, serving clients nationwide. Our growth is a testament to the trust our clients place in us and the
               consistent results we deliver.
-            </p>'
+            </p>
           </div>
         </section>
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => {
               const memberImage = teamImages.find((img) => img.id === member.id);
               return (
-                <Card key={member.name} className="text-center">
+                <Card key={member.name} className="text-center bg-card">
                   <CardContent className="pt-6">
                     <Avatar className="w-24 h-24 mx-auto mb-4 border-4 border-primary/20">
                       {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} />}

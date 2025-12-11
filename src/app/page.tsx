@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full h-screen flex items-center justify-center text-center">
+        <section className="relative w-full h-[calc(100vh-4rem)] flex items-center justify-center text-center">
           {heroImage && (
             <Image
               src={heroImage.imageUrl}
@@ -22,7 +22,7 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/60" />
           <div className="relative container mx-auto px-4 text-white">
             <h1 className="text-4xl font-bold md:text-6xl lg:text-7xl drop-shadow-md">
               Empowering Your Financial Future.
