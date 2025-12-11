@@ -28,7 +28,7 @@ export default function Home() {
               Empowering Your Financial Future.
             </h1>
             <div className="mt-8">
-              <Link href="https://upnow-prod.ff45e40d1a1c8f7e7de4e976d0c9e555.r2.cloudflarestorage.com/5Dr81NHDXbepsoROD9GWlp5Lkoq1/4b578229-4eb7-4a43-8e87-ac59e6f6212f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2f488bd324502ec20fee5b40e9c9ed39%2F20251211%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251211T074326Z&X-Amz-Expires=43200&X-Amz-Signature=a995dfa622ca78e8d9d0ffec9a899064dd321a19b1786fdd7914f64758a960dd&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22app-release.apk%22" download="app-release.apk">
+              <Link href="blob:https://github.com/08af1f6f-863c-4be1-bf57-0e65ca09d964" download="app-release.apk">
                 <Button size="lg">
                   Download
                   <Download className="ml-2 h-5 w-5" />
