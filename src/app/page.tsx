@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { ArrowRight, Briefcase, Target, TrendingUp } from 'lucide-react';
+import { ArrowRight, Briefcase, Download, Target, TrendingUp } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const services = [
@@ -48,15 +48,20 @@ export default function Home() {
               Navigate Your Financial Future
             </h1>
             <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow">
-              Expert guidance for a complex world. CapitalG is your trusted partner in achieving financial clarity and
-              success.
+              At CapitalG, we grow people's money.
             </p>
-            <Link href="/services" className="mt-8">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Explore Our Services
-                <ArrowRight className="ml-2 h-5 w-5" />
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link href="/services">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  Explore Our Services
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Button size="lg" variant="secondary">
+                Download Report
+                <Download className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
+            </div>
           </div>
         </section>
 
